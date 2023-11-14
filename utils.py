@@ -96,7 +96,7 @@ def enable_chat_history(func):
 
     # to show chat history on ui
     if "messages" not in st.session_state:
-        st.session_state["messages"] = [{"role": "PropGPT", "content": "How can I help you?"}]
+        st.session_state["messages"] = [{"role": "Mate", "content": "How can I help you?"}]
     for msg in st.session_state["messages"]:
         st.chat_message(msg["role"]).write(msg["content"])
 
