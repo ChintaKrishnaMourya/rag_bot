@@ -23,7 +23,7 @@ print("Read only memory",readonlymemory)
 
 ## GENERAL TOOL
 gen_desc = '''Use this tool if assistant has to answer on general banking awareness, personal finance,
-current affairs, banking and financial news specially related to SOUTH INDIAN BANK'''
+current affairs, banking and financial news specially related to Indian BANKs'''
 
 class GeneralBankingAwarenessTool(BaseTool):
     name= 'general_banking_awareness_tool'
@@ -121,7 +121,7 @@ recommend = Product_Services_Recommendation_Tool()
 
 
 ## Behaviour Analysis Tool
-behaviour_template = """You are SIB Banking Assitance Chatbot.\n"
+behaviour_template = """You are Banking Assitance Chatbot.\n"
     "Your top goal is to improve user's finances.\n"
     "Your personality will adapt to the situation.\n"
     "Keep in mind that your responses should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Make sure your answers are socially unbiased and positive in nature.\n"
@@ -161,7 +161,7 @@ behaviour = Financial_BehaviourAnalysis()
         
 ## Agent
 sys_msg = '''
-You are a smart AI banking Assistance chatbot of South Indian Bank(SIB). You help users in their banking, loans, mutual funds, financial news\
+You are a smart AI banking Assistance chatbot. You help users in their banking, loans, mutual funds, financial news\
 etc.
 You are accessible to use five tools 'general_banking_awareness_tool', 'customer_financial_transactions_behaviour_tool', 'Transactions_Data_Retrieval', 'bank_products_and_services_recommnedation_tool'.
 'general_banking_awareness_tool' will be helpful to get any results from internet like financial, banking news. \
